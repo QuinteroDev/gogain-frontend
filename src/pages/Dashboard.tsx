@@ -287,9 +287,9 @@ export function Dashboard({ data }: { data: any }) {
     const [financialTransItems, setFinancialTransItems] = useState<string[]>([]);
     const [piePlotRevenueItems, setPiePlotRevenueItems] = useState<string[]>([]);
     const [revenuePerEmployeItems, setRevenuePerEmployeItems] = useState<string[]>([]);
-    const [currentYear, setCurrentYear] = useState<number>(initialYear);
-    const [monthNumber, setMonthNumber] = useState<number>(initialMonth);
-    const [maxDays, setMaxDays] = useState<number>(initialMaxDays);
+    const [currentYear] = useState<number>(initialYear);
+    const [monthNumber] = useState<number>(initialMonth);
+    const [maxDays] = useState<number>(initialMaxDays);
     const [isFilterFinancal, setIsFilterFinancal] = useState<boolean>(true);
     const [isFilterPiePlot, setIsFilterPiePlot] = useState<boolean>(true);
     const [isFilterRevenue, setIsFilterRevenue] = useState<boolean>(true);
